@@ -6,18 +6,17 @@ It includes webpack for JS bundling and ES2015 transforms, CSS injection and aut
 ### Pre-requisites
 - [Node.js](http://nodejs.org/)
 - [Gulp](http://gulpjs.com/)
-- [Sass (3.4+)](http://sass-lang.com/install)
-- [Ruby (2.0+)](https://www.ruby-lang.org)
+- [Ruby](https://www.ruby-lang.org)
 
 ### Installation
-1. Install dependencies listed above
-2. Clone the project, then `cd` into the directory
-3. Run `make` to create the necessary directory structure
-4. Run `bundle && npm install` to install Jekyll & other dependencies
-5. Run `gulp` to start the file watching!
+1. **Install dependencies listed above**
+1. Fork and clone the project
+1. Change into the directory
+1. Run `npm run setup` to install other dependencies
+1. Run `gulp serve` to start the file watching!
 
 ### Writing Posts
-To add new drafts, simply add a file in the `posts/_drafts` directory that follows the naming convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter:
+To add new drafts, add a file in the `posts/_drafts` directory that follows the naming convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary YAML front matter:
 
     ---
     layout: post
@@ -43,6 +42,6 @@ Pages will need front matter as well, for example:
 Only pages with `nav` set to `true` will appear in the top navigation. Easy.
 
 ### Deployment
-This is automatically ready to deploy, so long as `gulp` has been running during development — otherwise use `jekyll build`.
+This is automatically ready to deploy, so long as `gulp` has been running during development.
 
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
