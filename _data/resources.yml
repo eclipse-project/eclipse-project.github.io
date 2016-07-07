@@ -1,0 +1,16 @@
+# Example data
+- title: Awwwards
+  url: http://www.awwwards.com/
+  description: Competition body recognising innovative web design
+
+- title: Codrops
+  url: http://tympanus.net/codrops/
+  description: Latest web trends, techniques and new possibilities
+
+- title: Smashing Magazine
+  url: https://www.smashingmagazine.com/
+  description: Professional resources for web designers and developers
+
+- title: Google Fonts
+  url: https://fonts.google.com/
+  description: Open source designer web fonts

@@ -10,8 +10,8 @@ It includes webpack for JS bundling and ES2015 transforms, CSS injection and aut
 
 ### Installation
 1. **Install dependencies listed above**
-1. Fork and clone the project
-1. Change into the directory
+1. Fork and clone this repo
+1. `cd` into the directory
 1. Run `npm run setup` to install other dependencies
 1. Run `gulp serve` to start the file watching!
 

@@ -1,0 +1,17 @@
+---
+layout: page
+title: Resources
+permalink: /resources/
+nav: true
+---
+<!-- An example page demonstrating how to use YAML data -->
+<h2>Recommended Resources</h2>
+
+<ul>
+  {% for resource in site.data.resources %}
+  <li>
+    <a href="{{ resource.url }}" target="_blank">{{ resource.title }}</a>
+    &mdash; {{ resource.description }}
+  </li>
+  {% endfor %}
+</ul>
