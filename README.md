@@ -23,6 +23,7 @@ To add new drafts, add a file in the `posts/_drafts` directory that follows the 
     title:  Example draft
     date:   2017-01-01 00:00:00 +0000
     categories: example
+    tags: example-tag
     ---
 
 Once you're ready to publish this draft, move the file to `posts/_posts`.

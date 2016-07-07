@@ -26,6 +26,24 @@
   .post-single & {
     margin-top: $spacing-unit / 2;
   }
+
+  .post-tags {
+		margin-left: $spacing-unit / 4;
+
+		a:not(:last-child):after {
+			content: ',';
+		}
+
+		svg {
+			vertical-align: middle;
+			width: 12px;
+			height: 12px;
+
+			path {
+				fill: $text-color;
+			}
+		}
+	}
 }
 
 .post-link {
@@ -69,10 +87,6 @@
       display: inline-block;
     }
   }
-
-  // .post-single & {
-  //   line-height: 1;
-  // }
 }
 
 .post-content {
