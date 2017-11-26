@@ -1,1 +1,3 @@
-console.log('Here are some words in the console!')
+import $ from "jquery";
+
+console.log($);

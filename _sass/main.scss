@@ -1,12 +1,14 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "base/variables",
-  "base/mixins",
-  "base/typography",
-  "base/figures",
-  "base/lists",
-  "base/layout",
-  "base/syntax-highlighting",
-  "sections/posts",
-  "sections/header",
-  "sections/footer";
+'../node_modules/html5-boilerplate/dist/css/normalize',
+'../node_modules/html5-boilerplate/dist/css/main',
+'base/variables',
+'base/mixins',
+'base/typography',
+'base/figures',
+'base/lists',
+'base/layout',
+'base/syntax-highlighting',
+'sections/posts',
+'sections/header',
+'sections/footer';
