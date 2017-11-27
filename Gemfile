@@ -6,3 +6,4 @@ raise 'Your Ruby version should be >= 2.0.0' unless RUBY_VERSION.to_f > 2.0
 # Without this, the blog is nil, nada, nothing.
 gem 'jekyll'
 gem 'sass'
+gem 'jekyll-admin', group: :jekyll_plugins
