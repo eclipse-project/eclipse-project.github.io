@@ -3,9 +3,14 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import childProcess from 'child_process';
 import webpack from 'webpack-stream';
+import merge from 'merge-stream';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+const sassSources = [
+  '_sass/vendors/html5-boilerplate.scss',
+  '_sass/main.scss'
+];
 
 // =======================
 //  TASKS FOR DEVELOPMENT
@@ -45,7 +50,7 @@ gulp.task('htmlmin', ['build:prod'], () => {
 });
 
 // Runs jekyll build for 'production' environment
-gulp.task('build:prod', ['js', 'sass', 'imagemin'], done => {
+gulp.task('build:prod', ['js', 'sass', 'imagemin', 'fonts'], done => {
   var productionEnv = process.env;
       productionEnv.JEKYLL_ENV = 'production';
 
@@ -57,7 +62,7 @@ gulp.task('build:prod', ['js', 'sass', 'imagemin'], done => {
 // ====================
 
 // Browser sync + styles for the notification
-gulp.task('browser-sync', ['js', 'sass', 'imagemin', 'build'], () => {
+gulp.task('browser-sync', ['js', 'sass', 'imagemin', 'fonts', 'build'], () => {
   browserSync({
     notify: {
       styles: [
@@ -85,18 +90,24 @@ gulp.task('browser-sync', ['js', 'sass', 'imagemin', 'build'], () => {
 
 // Compile sass + livereload with css injection + minificiation
 gulp.task('sass', () => {
-  return gulp.src('_sass/main.scss')
-    .pipe($.sass({
-      includePaths: ['sass'],
-      onError: browserSync.notify
-    }))
-    .pipe($.autoprefixer(['last 15 versions', '> 1%', 'ie 8'], {cascade: true}))
-    .pipe($.rename({extname: '.css'}))
-    .pipe(gulp.dest('_site/css'))
-    .pipe(reload({stream: true}))
+  let tasks = sassSources.map(function(source) {
+    return gulp.src(source)
+      .pipe($.sass({
+        includePaths: ['sass'],
+        onError: browserSync.notify
+      }))
+      .pipe($.autoprefixer(['last 15 versions', '> 1%', 'ie 8'], {cascade: true}))
+      .pipe($.rename({extname: '.css'}))
+      .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
+      .pipe(gulp.dest('_site/css'))
+      .pipe($.rename({extname: '.min.css'}))
+      .pipe(gulp.dest('_site/css'))
+      .pipe(reload({stream: true}));
+  });
     .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
     .pipe($.rename({extname: '.min.css'}))
     .pipe(gulp.dest('_site/css'));
+  return merge(tasks);
 });
 
 // Compile JavaScript files + uglifies files
