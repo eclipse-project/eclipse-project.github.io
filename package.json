@@ -1,13 +1,13 @@
 {
-  "name": "jekyll-gulp-boilerplate",
-  "description": "This is a boilerplate for static Jekyll sites with gulp for automation.",
-  "version": "1.0.0",
+  "name": "eclipse-website",
+  "description": "This is the website for the Eclipse project in Thessaloniki.",
+  "version": "0.0.0",
   "scripts": {
     "setup": "bundle install && npm install && make"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vannio/jekyll-gulp-boilerplate.git"
+    "url": "git+https://github.com/nop33/eclipse-website.git"
   },
   "keywords": [
     "jekyll",
@@ -16,10 +16,7 @@
   ],
   "author": "vannio",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vannio/jekyll-gulp-boilerplate/issues"
-  },
-  "homepage": "https://github.com/vannio/jekyll-gulp-boilerplate#readme",
+  "homepage": "",
   "devDependencies": {
     "babel-loader": "^6.2.2",
     "babel-preset-es2015": "^6.5.0",
