@@ -1,14 +1,10 @@
 ---
 layout: home
 title: Home
-foo: |
-  bar
+is_in_menu: true
+position_in_menu: 1
+project_name: |
+  Eclipse
+headline: |
+  Eclipse is a support group for LGBTI+ and Queer refugees in Thessaloniki. We want to create a safe space, where refugees can connect within themselves and to the local LGBTI+ community.
 ---
-## Hello!
-This is an example of a page.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-  deserunt mollit anim id est laborum.

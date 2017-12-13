@@ -1,0 +1,47 @@
+%font-condensed {
+  font-family: 'Muli', sans-serif;
+  letter-spacing: -1px;
+}
+
+%body-typography {
+  @extend %font-condensed;
+  font-size: 1.25rem;
+}
+
+h1 {
+  @extend %font-condensed;
+  font-weight: $weight-light;
+  font-size: 5rem;
+}
+
+h2 {
+  @extend %font-condensed;
+}
+
+h3 {
+  @extend %font-condensed;
+  font-size: 3rem;
+  font-weight: 900;
+  display: inline-flex;
+  flex-direction: column;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 0.3rem;
+    background-color: $grey-dark;
+  }
+}
+
+h4 {
+  @extend %font-condensed;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: flex-end;
+  white-space: pre;
+}
+
+p {
+  @extend %body-typography;
+}

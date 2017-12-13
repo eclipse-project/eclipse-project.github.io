@@ -1,0 +1,118 @@
+.page-content {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+section {
+  margin-bottom: 8rem;
+}
+
+section.container,
+div.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+section.container,
+.section-body {
+  margin-top: 5rem;
+}
+
+section.container {
+  margin-bottom: 8rem;
+}
+
+.section-content {
+  margin-top: 3rem;
+}
+
+.right-aligned {
+  .icon-wrapper {
+    right: 0;
+  }
+
+  h4 {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+
+section.center-aligned {
+  text-align: center;
+}
+
+.section-subtitle {
+  @extend %font-condensed;
+  font-size: 1.5rem;
+  color: $grey-light;
+}
+
+.header-cover {
+  background-image: url('https://source.unsplash.com/random/1200x800');
+  background-position: center;
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+  border-bottom: 0.25rem solid $grey-light;
+}
+
+.header-icon {
+  position: relative;
+}
+
+.icon-wrapper {
+  border: 0.25rem solid $grey-light;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(-5rem / 2 - 0.25rem / 2);
+  background-color: white;
+
+  > i {
+    font-size: 3rem;
+  }
+}
+
+section.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-body {
+  background-color: white;
+}
+
+section.hero::before,
+section.hero::after {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  bottom: 15px;
+  left: -0.5rem;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+section.hero::after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: -0.5rem;
+  left: auto;
+}
