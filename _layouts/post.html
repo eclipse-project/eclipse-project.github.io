@@ -1,13 +1,23 @@
 ---
 layout: default
 ---
-<article class="post post-single" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> {% if page.tags.first %}<span class="post-tags">{% include tag.svg %}{% for tag in page.tags %}<a href="/posts/{{ tag }}">{{ tag }}</a> {% endfor %}</span>{% endif %}</p>
-  </header>
+<a href="{{ post.url }}">{{ post.title }}</a>
+<div class="card article">
+  <div class="card-content">
+    <div class="media">
+      <!-- <div class="media-center">
+        <img src="http://www.radfaces.com/images/avatars/daria-morgendorffer.jpg" class="author-image" alt="Placeholder image">
+      </div> -->
+      <div class="media-content has-text-centered">
+        <p class="title article-title">{{ page.title }}</p>
+        <p class="subtitle is-6 article-subtitle">
+          <a href="#">@d</a> on October 7, 2017
+        </p>
+      </div>
+    </div>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    <div class="content article-body">
+      {{ page.content }}
+    </div>
   </div>
-</article>
+</div>

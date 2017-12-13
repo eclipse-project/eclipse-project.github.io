@@ -1,0 +1,87 @@
+h4 {
+  > span {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 0.2rem;
+      background-color: $grey-dark;
+      position: absolute;
+      top: -2rem;
+      opacity: 0;
+    }
+  }
+}
+
+.revealed  {
+  h4 {
+    > span::before {
+      top: 0;
+      opacity: 1;
+      transition: all 200ms ease-in-out;
+    }
+  }
+}
+
+.services {
+  margin-top: 2rem;
+}
+
+.service {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.contact {
+  padding: 3rem 0;
+  background-color: $grey-dark;
+  color: $white-ter;
+  margin-bottom: 0;
+
+  h3 {
+    margin-bottom: 3rem;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .contact-media {
+    transition: transform 150ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .media-icon {
+    font-size: 11rem;
+  }
+
+  .media-text {
+    margin-top: 1.5rem;
+  }
+
+  .phone-number {
+    font-size: 1.5rem;
+  }
+
+  .languages {
+    font-size: 0.9rem;
+    color: $grey-light;
+  }
+}
+
+section.blog {
+  background-color: $cyan;
+}
