@@ -104,9 +104,14 @@ gulp.task('sass', () => {
       .pipe(gulp.dest('_site/css'))
       .pipe(reload({stream: true}));
   });
+
+  let fontello = gulp.src('_assets/fontello/css/*')
     .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
+    .pipe($.concatCss('fontello'))
     .pipe($.rename({extname: '.min.css'}))
-    .pipe(gulp.dest('_site/css'));
+    .pipe(gulp.dest('_site/css'))
+    .pipe(reload({stream: true}));
+  tasks.push(fontello);
   return merge(tasks);
 });
 
@@ -136,4 +141,10 @@ gulp.task('imagemin', () => {
   return gulp.src('_assets/*')
     .pipe($.imagemin())
     .pipe(gulp.dest('_site/assets'));
+});
+
+// Fonts
+gulp.task('fonts', function() {
+    return gulp.src(['_assets/fontello/fonts/*'])
+    .pipe(gulp.dest('_site/fonts/'));
 });
