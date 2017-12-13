@@ -1,5 +1,5 @@
-# Jekyll Babel Starter Kit
-This is a boilerplate for static Jekyll sites with gulp for automation.
+# Eclipse website
+This is the website for the Eclipse project in Thessaloniki and uses the Jekyll Babel Starter Kit.
 
 It includes webpack for JS bundling and ES2015 transforms, CSS injection and auto-reload with BrowserSync, and a bunch of other useful tasks.
 
