@@ -228,13 +228,28 @@
     <section class="center-aligned blog">
       <div class="container reveal">
         <h3>Latest from our blog</h3>
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
+        <div class="columns post-list">
+          {% for post in site.posts limit:3 %}
+            <div class="column is-one-third post">
+              <a class="card" href="{{ post.url }}">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title">{{ post.title }}</p>
+                    </div>
+                  </div>
+                  <div class="content">{{ post.excerpt }}</div>
+                  <footer class="card-footer">
+                    <time datetime="2016-1-1">{{ post.date | date_to_long_string }}</time>
+                  </footer>
+                </div>
+              </a>
+            </div>
           {% endfor %}
-        </ul>
+        </div>
+        <div class="button-container centered">
+          <a class="button is-large is-rounded" href="/blog">See all posts</a>
+        </div>
       </div>
     </section>
 

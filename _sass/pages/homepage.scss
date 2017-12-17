@@ -42,7 +42,7 @@ h4 {
   }
 }
 
-.contact {
+.center-aligned {
   padding: 3rem 0;
   background-color: $grey-dark;
   color: $white-ter;
@@ -84,4 +84,52 @@ h4 {
 
 section.blog {
   background-color: $cyan;
+
+  .post-list {
+    align-items: stretch;
+    margin-bottom: 3rem;
+  }
+
+  .post {
+    text-align: left;
+
+    .card,
+    .card-content {
+      height: 100%;
+    }
+
+    .card {
+      display: block;
+      transition: transform $transition-duration $transition-effect;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media-content {
+      margin: 0;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .content {
+      flex: 1;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    footer {
+      justify-content: flex-end;
+    }
+  }
 }
