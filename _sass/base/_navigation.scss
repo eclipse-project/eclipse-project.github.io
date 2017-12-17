@@ -1,0 +1,24 @@
+nav.navbar {
+  background-color: transparent;
+
+  &.is-active {
+    background-color: $darkest-purple;
+    color: $white;
+  }
+
+  .navbar-menu {
+    background-color: transparent;
+  }
+
+  @include until($desktop) {
+    .navbar-item {
+      color: $white;
+    }
+  }
+
+  .navbar-item {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

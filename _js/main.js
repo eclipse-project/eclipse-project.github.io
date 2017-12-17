@@ -2,7 +2,16 @@ import $ from "jquery";
 import ScrollReveal from "scrollreveal";
 
 console.log($);
+
 $(document).ready(function() {
+    $('.navbar-burger').on('click', function() {
+      let $this = $(this);
+      let $target = $('#' + $this.data('target'));
+      $this.toggleClass('is-active')
+      $target.toggleClass('is-active');
+      $this.closest('nav').toggleClass('is-active');
+    });
+
   window.sr = ScrollReveal({
     distance: '5rem',
     scale: 1,
