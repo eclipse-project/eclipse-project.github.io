@@ -138,9 +138,9 @@ gulp.task('js', () => {
 
 // Optimise images + copy any other assets
 gulp.task('imagemin', () => {
-  return gulp.src('_assets/*')
+  return gulp.src('_assets/images/*')
     .pipe($.imagemin())
-    .pipe(gulp.dest('_site/assets'));
+    .pipe(gulp.dest('_site/assets/images'));
 });
 
 // Fonts
