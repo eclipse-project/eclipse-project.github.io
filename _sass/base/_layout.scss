@@ -81,38 +81,3 @@ section.hero {
   position: relative;
   height: 100vh;
 }
-
-.hero-body {
-  background-color: white;
-}
-
-section.hero::before,
-section.hero::after {
-  z-index: -1;
-  position: absolute;
-  content: '';
-  bottom: 15px;
-  left: -0.5rem;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-
-section.hero::after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: -0.5rem;
-  left: auto;
-}

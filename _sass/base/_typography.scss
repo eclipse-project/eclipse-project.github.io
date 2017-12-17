@@ -37,9 +37,12 @@ h4 {
   @extend %font-condensed;
   font-size: 2rem;
   font-weight: bold;
-  display: inline-flex;
-  align-items: flex-end;
-  white-space: pre;
+
+  @include from($tablet) {
+    display: inline-flex;
+    align-items: flex-end;
+    white-space: pre;
+  }
 }
 
 p {
