@@ -3,3 +3,7 @@
     text-align: center;
   }
 }
+
+.card.article:not(:last-child) {
+  margin-bottom: 1rem;
+}

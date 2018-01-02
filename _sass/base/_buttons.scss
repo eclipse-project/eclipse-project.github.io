@@ -1,0 +1,19 @@
+.button {
+  border: none;
+  transition: all $transition-duration $transition-effect;
+
+  &:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+  }
+}
+
+.primary {
+  @extend %body-typography;
+  background-color: $pastel-purple;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}

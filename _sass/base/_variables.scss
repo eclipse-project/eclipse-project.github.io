@@ -1,11 +1,13 @@
 $transition-duration: 150ms;
 $transition-effect: ease-in-out;
 
-$purple: #88245a;
-$dark-purple: #421126;
+$purple: #d7d1db;
+$dark-purple: #595d70;
+$light-purple: lighten($purple, 10%);
 $darkest-purple: #1d0d12;
+$pastel-purple: #879cd4;
 
-$petrol: #305b87;
+$petrol: #bac1d3;
 $blue: #0f294b;
 $dark-blue: #060b2b;
 
