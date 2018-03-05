@@ -10,7 +10,6 @@
 </footer>
 
 {% if jekyll.environment == "production" %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="{{ "/scripts/main.min.js" | prepend: site.baseurl }}"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -19,7 +18,18 @@
     ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script>
 {% else %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="{{ "/scripts/main.js" | prepend: site.baseurl }}"></script>
 {% endif %}
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
