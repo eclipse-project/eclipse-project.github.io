@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: eclipse-site
-media_folder: "_assets/images"
+media_folder: "media/images"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
