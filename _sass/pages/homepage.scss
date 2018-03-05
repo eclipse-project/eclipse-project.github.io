@@ -1,37 +1,10 @@
 .homepage {
-  h1 {
-    color: $light-purple;
-  }
-
-  section {
+  section:not(.hero) {
     padding-top: 8rem;
     padding-bottom: 8rem;
 
     h3 {
       margin-bottom: 3rem;
-    }
-  }
-
-  section.hero {
-    background-image: url('../assets/images/flag.jpg');
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-    padding: 0;
-  }
-}
-
-.subtitle {
-  color: $light-purple;
-}
-
-.revealed  {
-  h4 {
-    > span::before {
-      top: 0;
-      opacity: 1;
-      transition: all 200ms $transition-effect;
     }
   }
 }

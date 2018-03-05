@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
   {% include head.html %}
-  <body>
+  <body class="{{ page.layout }}">
     <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     {% include header.html %}
-    <div class="container page-content">
-      {{ content }}
+    {% include subpageHero.html %}
+    <div class="page-content">
+      <div class="container">
+        {{ content }}
+      </div>
     </div>
     {% include footer.html %}
   </body>

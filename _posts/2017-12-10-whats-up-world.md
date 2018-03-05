@@ -4,8 +4,6 @@ title: "What's up, world? Good morning!"
 date: 2017-12-10 06:16:01 -0600
 ---
 
-This is our freshly baked website! Enjoy!
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute

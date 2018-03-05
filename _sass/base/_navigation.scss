@@ -10,13 +10,9 @@ nav.navbar {
     background-color: transparent;
   }
 
-  @include until($desktop) {
-    .navbar-item {
-      color: $white;
-    }
-  }
-
   .navbar-item {
+    color: $white;
+
     &:hover {
       background-color: transparent;
     }

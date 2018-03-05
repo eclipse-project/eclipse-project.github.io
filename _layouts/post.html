@@ -1,21 +1,9 @@
 ---
 layout: default
+css_class: blog
 ---
-<a href="{{ post.url }}">{{ post.title }}</a>
-<div class="card article">
-  <div class="card-content">
-    <div class="media">
-      <!-- <div class="media-center">
-        <img src="http://www.radfaces.com/images/avatars/daria-morgendorffer.jpg" class="author-image" alt="Placeholder image">
-      </div> -->
-      <div class="media-content has-text-centered">
-        <p class="title article-title">{{ page.title }}</p>
-        <p class="is-6 article-subtitle">October 7, 2017</p>
-      </div>
-    </div>
-
-    <div class="content article-body">
-      {{ page.content }}
-    </div>
+<div class="columns is-centered">
+  <div class="column is-9-desktop article">
+    {{ page.content }}
   </div>
 </div>

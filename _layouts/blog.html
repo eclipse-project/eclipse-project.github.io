@@ -1,27 +1,25 @@
 ---
 layout: default
 ---
-<div class="blog">
-  <h1>Our latest news</h1>
-  <section class="articles">
-    <div class="column">
-      {% for post in site.posts %}
-        <div class="card article">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-center">
-              </div>
-              <div class="media-content has-text-centered">
-                <a href="{{ post.url }}" class="title article-title">{{ post.title }}</a>
-                <p class="is-6 article-subtitle">{{ post.date | date_to_long_string }}</p>
-              </div>
+<div class="columns">
+  <div class="column">
+    {% for post in site.posts %}
+      <div class="card article">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content has-text-centered">
+              <a href="{{ post.url }}" class="title article-title">{{ post.title }}</a>
+              <p class="is-6 article-subtitle">{{ post.date | date_to_long_string }}</p>
             </div>
+          </div>
 
-            <div class="content article-body">
-              {{ post.content }}
+          <div class="content columns is-centered">
+            <div class="column is-9-desktop">
+              {{ post.excerpt }}
             </div>
           </div>
         </div>
-      {% endfor %}
-  </section>
+      </div>
+    {% endfor %}
+  </div>
 </div>

@@ -6,8 +6,8 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     {% include header.html %}
-    <section class="hero is-medium">
-      <div class="hero-body">
+    <section class="hero">
+      <div class="hero-container-wrapper">
         <div class="container">
           <div class="columns">
             <div class="column is-5">
@@ -21,22 +21,20 @@
     </section>
 
     <section class="container center-aligned">
-      <h3>who we are</h3>
+      <h3>{{ page.section1_title }}</h3>
       <div class="columns section-content">
         <div class="column is-10 is-offset-1">
-          <p>
-            Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam. Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.
-          </p>
+          <p>{{ page.section1_content }}</p>
         </div>
       </div>
       <div class="button-container centered">
-        <a class="button is-large is-rounded primary" href="/what-we-do">Learn more</a>
+        <a class="button is-large is-rounded primary" href="/what-we-do">{{ page.section1_button }}</a>
       </div>
     </section>
 
     <section class="center-aligned blog">
       <div class="container reveal">
-        <h3>Latest from our blog</h3>
+        <h3>{{ page.section2_title }}</h3>
         <div class="columns post-list">
           {% for post in site.posts limit:3 %}
             <div class="column is-one-third post">
@@ -57,14 +55,14 @@
           {% endfor %}
         </div>
         <div class="button-container centered">
-          <a class="button is-large is-rounded primary" href="/blog">See all posts</a>
+          <a class="button is-large is-rounded primary" href="/blog">{{ page.section2_button }}</a>
         </div>
       </div>
     </section>
 
     <section class="center-aligned contact">
       <div class="container reveal">
-        <h3>Get in touch</h3>
+        <h3>{{ page.section3_title }}</h3>
         <div class="columns">
           <div class="column is-one-third">
             <div class="contact-media">
@@ -74,18 +72,18 @@
           <div class="column is-one-third">
             <div class="contact-media">
               <span class="media-icon icon-cube"></span>
-              <div class="media-text">eclipse_alkusuf@riseup.net</div>
+              <div class="media-text">{{ page.section3_email }}</div>
             </div>
           </div>
           <div class="column is-one-third">
             <div class="contact-media">
               <span class="media-icon icon-cube"></span>
               <div class="media-text">
-                <div class="phone-number">+30 697 708 1273</div>
+                <div class="phone-number">{{ page.section3_phone_arabic }}</div>
                 <div class="languages">English, Arabic (عربي / انكليزي)</div>
               </div>
               <div class="media-text">
-                <div class="phone-number">+30 697 708 3801</div>
+                <div class="phone-number">{{ page.section3_phone_farsi }}</div>
                 <div class="languages">English, Farsi (فارسی/ انگلیسی)</div>
               </div>
             </div>

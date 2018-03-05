@@ -1,6 +1,11 @@
-.blog {
+.blog,
+.post {
+  section.hero::before {
+    background-image: url('../assets/images/blog.jpg');
+  }
+
   h1 {
-    text-align: center;
+    font-size: 2.5rem;
   }
 }
 

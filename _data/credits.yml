@@ -1,3 +1,6 @@
-photos:
-  - creator: Yannis Papanastasopoulos
-  - url: https://unsplash.com/photos/if_29seD7tA
+photo1:
+  creator: Yannis Papanastasopoulos
+  url: https://unsplash.com/photos/if_29seD7tA
+photo2:
+  creator: Matt Botsford
+  url: https://unsplash.com/photos/OKLqGsCT8qs
