@@ -51,3 +51,36 @@ collections:
         - {label: "Email", name: "email", widget: "string"}
         - {label: "Arabic Phone", name: "phone_arabic", widget: "string"}
         - {label: "Farsi Phone", name: "phone_farsi", widget: "string"}
+  - name: "what-we-do"
+    label: What we do
+    folder: "pages/what-we-do"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Add to menu", name: "is_in_menu", widget: "boolean"}
+      - label: "Position in menu"
+        name: "position_in_menu"
+        widget: "number"
+        valueType: "int"
+        min: 1
+        max: 100
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "subtitle", name: "subtitle", widget: "text"}
+      - label: "Intro section"
+        name: "intro_section"
+        widget: "object"
+        fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Subtitle", name: "subtitle", widget: "text"}
+        - {label: "Content", name: "content", widget: "markdown"}
+      - label: "Page sections"
+        name: "page_sections"
+        widget: "list"
+        fields:
+          - {label: "Title part 1", name: "title1", widget: "string"}
+          - {label: "Title part 2 (with line above)", name: "title2", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
