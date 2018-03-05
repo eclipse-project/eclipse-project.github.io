@@ -38,7 +38,7 @@ gulp.task('build:reload', ['build'], () => { reload(); });
 
 // First run htmlmin, then deploy to github
 gulp.task('deploy', ['htmlmin'], () => {
-  return gulp.src('./_site/**/*').pipe($.ghPages({branch: 'prod'}));
+  // return gulp.src('./_site/**/*').pipe($.ghPages({branch: 'prod'}));
 });
 
 // First run build:prod and then minify HTML
