@@ -29,12 +29,12 @@ collections:
         max: 100
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Headline Title", name: "headline_title", widget: "string"}
-      - {label: "Headline Subtitle", name: "headline_subtitle", widget: "string"}
+      - {label: "Headline Subtitle", name: "headline_subtitle", widget: "text"}
       - label: "Section 1"
         name: "section1"
         widget: "object"
         fields:
-        - {label: "Title", name: "section1_title", widget: "string"}
+        - {label: "Title", name: "title", widget: "string"}
         - {label: "Content", name: "section1_content", widget: "markdown"}
         - {label: "Button Text", name: "section1_button", widget: "string"}
       - label: "Section 2"

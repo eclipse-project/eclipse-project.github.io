@@ -8,7 +8,8 @@ headline_title: |
   Eclipse
 headline_subtitle: |
   Eclipse is a support group for LGBTI+ and Queer refugees in Thessaloniki. We want to create a safe space, where refugees can connect within themselves and to the local LGBTI+ community.
-section1_title: who we are
+section1:
+  title: who we are
 section1_content: |
   Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam. Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.
 section1_button: Learn more
