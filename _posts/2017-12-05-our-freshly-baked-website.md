@@ -1,7 +1,10 @@
 ---
 layout: post
-title: "Our Freshly Baked Website!"
-date: 2017-12-05 16:16:01 -0600
+title: Our Freshly Baked Website!
+teaser_text: >-
+  This is our freshly baked website! Enjoy! Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit, sed do eiusmod temporincididunt.
+date: '2017-12-05 16:16:01 -0600'
 ---
 
 This is our freshly baked website! Enjoy! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporincididunt.
