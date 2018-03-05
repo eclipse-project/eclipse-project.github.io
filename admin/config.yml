@@ -35,19 +35,19 @@ collections:
         widget: "object"
         fields:
         - {label: "Title", name: "title", widget: "string"}
-        - {label: "Content", name: "section1_content", widget: "markdown"}
-        - {label: "Button Text", name: "section1_button", widget: "string"}
+        - {label: "Content", name: "content", widget: "markdown"}
+        - {label: "Button Text", name: "button", widget: "string"}
       - label: "Section 2"
         name: "section2"
         widget: "object"
         fields:
-        - {label: "Title", name: "section2_title", widget: "string"}
-        - {label: "Button Text", name: "section2_button", widget: "string"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Button Text", name: "button", widget: "string"}
       - label: "Section 3"
         name: "section3"
         widget: "object"
         fields:
-        - {label: "Title", name: "section3_title", widget: "string"}
-        - {label: "Email", name: "section3_email", widget: "string"}
-        - {label: "Arabic Phone", name: "section3_phone_arabic", widget: "string"}
-        - {label: "Farsi Phone", name: "section3_phone_farsi", widget: "string"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Email", name: "email", widget: "string"}
+        - {label: "Arabic Phone", name: "phone_arabic", widget: "string"}
+        - {label: "Farsi Phone", name: "phone_farsi", widget: "string"}
