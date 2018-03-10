@@ -138,9 +138,15 @@ gulp.task('js', () => {
 
 // Optimise images + copy any other assets
 gulp.task('imagemin', () => {
-  return gulp.src('_assets/images/*')
+  let tasks = []
+  let assets = gulp.src('_assets/images/*')
     .pipe($.imagemin())
     .pipe(gulp.dest('_site/assets/images'));
+  let media = gulp.src('media/images/*')
+    .pipe($.imagemin())
+    .pipe(gulp.dest('media/images'));
+  tasks.push(media);
+  return merge(tasks);
 });
 
 // Fonts
