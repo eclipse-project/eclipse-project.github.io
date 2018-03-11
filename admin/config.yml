@@ -5,6 +5,7 @@ media_folder: "media/images"
 collections:
   - name: "blog-posts" # Used in routes, e.g., /admin/collections/blog
     label: "Blog posts" # Used in the UI
+    label_singular: "blog post" # Used in the UI
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -90,6 +91,7 @@ collections:
     folder: "pages/blog"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Language", name: "language", widget: "hidden"}
       - {label: "Add to menu", name: "is_in_menu", widget: "boolean"}
       - label: "Position in menu"
         name: "position_in_menu"
