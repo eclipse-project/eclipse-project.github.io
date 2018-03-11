@@ -1,5 +1,6 @@
 ---
 layout: home
+language: en
 permalink: index.html
 is_in_menu: true
 position_in_menu: 1

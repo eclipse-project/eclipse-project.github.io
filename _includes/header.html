@@ -14,9 +14,18 @@
         <div class="navbar-end">
           {% assign pages = site.pages | sort: 'position_in_menu' %}
           {% for p in pages %}
-            {% if p.is_in_menu == true %}
-              <a class="navbar-item {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">
-                {{ p.title }}
+            {% if p.language == page.language %}
+              {% if p.is_in_menu == true %}
+                <a class="navbar-item {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">
+                  {{ p.title }}
+                </a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          {% for lang in site.languages %}
+            {% if lang != page.language %}
+              <a class="navbar-item" href="/{% if lang != site.default_language %}{{lang}}{% endif %}">
+                {{ site.language_names[lang] }}
               </a>
             {% endif %}
           {% endfor %}

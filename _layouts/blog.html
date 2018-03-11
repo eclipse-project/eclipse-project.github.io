@@ -4,22 +4,24 @@ layout: default
 <div class="columns">
   <div class="column">
     {% for post in site.posts %}
-      <div class="card article">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content has-text-centered">
-              <a href="{{ post.url }}" class="title article-title">{{ post.title }}</a>
-              <p class="is-6 article-subtitle">{{ post.date | date_to_long_string }}</p>
+      {% if post.language == page.language %}
+        <div class="card article">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content has-text-centered">
+                <a href="{{ post.url }}" class="title article-title">{{ post.title }}</a>
+                <p class="is-6 article-subtitle">{{ post.date | date_to_long_string }}</p>
+              </div>
             </div>
-          </div>
 
-          <div class="content columns is-centered">
-            <div class="column is-9-desktop">
-              {{ post.excerpt }}
+            <div class="content columns is-centered">
+              <div class="column is-9-desktop">
+                {{ post.excerpt }}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

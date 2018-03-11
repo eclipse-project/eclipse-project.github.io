@@ -1,5 +1,6 @@
 ---
 layout: post
+language: en
 title: "Our Freshly Baked Website [Part 2]!"
 date: 2017-12-17 06:16:01 -0600
 ---

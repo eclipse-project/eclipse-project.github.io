@@ -1,20 +1,19 @@
 ---
 layout: what-we-do
+language: en
+permalink: /what-we-do/
 is_in_menu: true
-permalink: what-we-do/
 position_in_menu: 2
 title: What we do
 subtitle: This is the subtitle of the page
 intro_section:
-  content: >-
-    Purus semper eget duis at tellus at urna condimentum mattis. Non blandit
+  content: Purus semper eget duis at tellus at urna condimentum mattis. Non blandit
     massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.
     Accumsan tortor posuere ac ut consequat semper viverra nam.
   title: what we do
   subtitle: It's all about what we do and how we do it!
 page_sections:
-  - content: >
-      At the core of our work is a weekly meeting, to create a safe space for
+  - content: At the core of our work is a weekly meeting, to create a safe space for
       LGBTI+ refugees in the city centre of Thessaloniki. The space is not
       publicly listed as our highest priority is to create an environment that
       ensures safety and anonymity.
@@ -28,22 +27,20 @@ page_sections:
       without fear of being judged.
     title1: we create a
     title2: safe space
-  - content: >-
-      Another pillar of our work is the language classes. Many members of the
+  - content: Another pillar of our work is the language classes. Many members of the
       group face discrimination in other educational spaces. They stopped
       joining these groups and are therefore left without any education. This is
       why we decided to offer language classes in small groups, in order to meet
       their needs as good as possible.
     title1: learn a
     title2: language
-  - content: >
-      Once a week one of the group members is conducting an aerobic or dance
+  - content: Once a week one of the group members is conducting an aerobic or dance
       class, which enables people to get some physical activity and is a good
       way to reduce stress. Apart from this we organise other activities like
       beach trips, birthday parties or other excursions.
     title1: exercise and
     title2: socialise
-  - cards:
+    cards:
       - text: Medical support
       - text: STD testing
       - text: Legal advice
@@ -52,14 +49,11 @@ page_sections:
       - text: Social activities
       - text: Psychosocial services
       - text: Housing
-    content: >
-      We connect the members of our group to other organisations, which can
-      support them in other needs. Through our network we can refer them to the
-      following services:
+  - content: We connect the members of our group to other organisations, which can
+      support them in other needs. Through our network we can refer them to the following services
     title1: connect with
     title2: organisations and services
-  - content: >
-      In order for the members of our group to not lose their support, when they
+  - content: In order for the members of our group to not lose their support, when they
       leave Greece, we are building a network of initiatives all over Europe,
       which are supporting LGBTI+ refugees. This enables us to refer members of
       our group to other support networks.

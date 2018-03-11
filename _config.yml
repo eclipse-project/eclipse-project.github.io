@@ -26,3 +26,9 @@ keep_files:
   - scripts/main.js
   - scripts/main.min.js
   - fonts
+
+languages: ["en", "gr"]
+default_language: en
+language_names:
+  en: English
+  gr: Ελληνικά

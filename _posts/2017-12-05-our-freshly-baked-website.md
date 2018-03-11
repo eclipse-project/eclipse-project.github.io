@@ -1,5 +1,6 @@
 ---
 layout: post
+language: en
 title: Our Freshly Baked Website!
 teaser_text: >-
   This is our freshly baked website! Enjoy! Lorem ipsum dolor sit amet,

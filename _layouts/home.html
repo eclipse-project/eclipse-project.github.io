@@ -28,7 +28,9 @@
         </div>
       </div>
       <div class="button-container centered">
-        <a class="button is-large is-rounded primary" href="/what-we-do">{{ page.section1.button }}</a>
+        <a class="button is-large is-rounded primary" href="{{ site.data.routes.what_we_do[page.language] }}">
+          {{- page.section1.button -}}
+        </a>
       </div>
     </section>
 
@@ -36,26 +38,32 @@
       <div class="container reveal">
         <h3>{{ page.section2.title }}</h3>
         <div class="columns post-list">
-          {% for post in site.posts limit:3 %}
-            <div class="column is-one-third post">
-              <a class="card" href="{{ post.url }}">
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title">{{ post.title }}</p>
+          {% assign counter = 1 %}
+          {% for post in site.posts %}
+            {% if post.language == page.language and counter <= 3 %}
+              {% assign counter = counter | plus: 1 %}
+              <div class="column is-one-third post">
+                <a class="card" href="{{ post.url }}">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title">{{ post.title }}</p>
+                      </div>
                     </div>
+                    <div class="content">{{ post.excerpt }}</div>
+                    <footer class="card-footer">
+                      <time datetime="2016-1-1">{{ post.date | date_to_long_string }}</time>
+                    </footer>
                   </div>
-                  <div class="content">{{ post.excerpt }}</div>
-                  <footer class="card-footer">
-                    <time datetime="2016-1-1">{{ post.date | date_to_long_string }}</time>
-                  </footer>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
+            {% endif %}
           {% endfor %}
         </div>
         <div class="button-container centered">
-          <a class="button is-large is-rounded primary" href="/blog">{{ page.section2.button }}</a>
+          <a class="button is-large is-rounded primary" href="{{ site.data.routes.blog[page.language] }}">
+            {{- page.section2.button -}}
+          </a>
         </div>
       </div>
     </section>
