@@ -46,3 +46,8 @@ Only pages with `nav` set to `true` will appear in the top navigation. Easy.
 This is automatically ready to deploy, so long as the `gulp` server has been running during development.
 
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
+
+Credits:
+Articles:
+https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
+https://blog.mvp-space.com/10-steps-to-configure-jekyll-with-netlify-as-a-cms-d754d73ea731
