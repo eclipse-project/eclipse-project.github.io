@@ -3,8 +3,8 @@ backend:
   branch: eclipse-site
 media_folder: "media/images"
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+  - name: "blog-posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog posts" # Used in the UI
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -17,7 +17,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "homepage"
-    label: Homepage
+    label: "Home page"
     folder: "pages/homepage"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden"}
@@ -53,7 +53,7 @@ collections:
         - {label: "Arabic Phone", name: "phone_arabic", widget: "string"}
         - {label: "Farsi Phone", name: "phone_farsi", widget: "string"}
   - name: "what-we-do"
-    label: What we do
+    label: "What we do page"
     folder: "pages/what-we-do"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden"}
@@ -85,3 +85,17 @@ collections:
             widget: "list"
             fields:
               - {label: "Text", name: "text", widget: "string"}
+  - name: "blog"
+    label: "Blog page"
+    folder: "pages/blog"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Add to menu", name: "is_in_menu", widget: "boolean"}
+      - label: "Position in menu"
+        name: "position_in_menu"
+        widget: "number"
+        valueType: "int"
+        min: 1
+        max: 100
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "subtitle", name: "subtitle", widget: "text"}
