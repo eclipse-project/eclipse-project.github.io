@@ -1,6 +1,7 @@
 ---
 layout: what-we-do
 is_in_menu: true
+permalink: what-we-do/
 position_in_menu: 2
 title: What we do
 subtitle: This is the subtitle of the page
@@ -69,4 +70,3 @@ page_sections:
     title1: network with other LGBTI+ support groups in
     title2: Europe
 ---
-
