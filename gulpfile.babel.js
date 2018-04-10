@@ -98,20 +98,13 @@ gulp.task('sass', () => {
       }))
       .pipe($.autoprefixer(['last 15 versions', '> 1%', 'ie 8'], {cascade: true}))
       .pipe($.rename({extname: '.css'}))
+      .pipe(gulp.dest('_site/css/'))
       .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
-      .pipe(gulp.dest('_site/css'))
       .pipe($.rename({extname: '.min.css'}))
-      .pipe(gulp.dest('_site/css'))
+      .pipe(gulp.dest('_site/css/'))
       .pipe(reload({stream: true}));
   });
 
-  let fontello = gulp.src('_assets/fontello/css/*')
-    .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
-    .pipe($.concatCss('fontello'))
-    .pipe($.rename({extname: '.min.css'}))
-    .pipe(gulp.dest('_site/css'))
-    .pipe(reload({stream: true}));
-  tasks.push(fontello);
   return merge(tasks);
 });
 
@@ -151,6 +144,6 @@ gulp.task('imagemin', () => {
 
 // Fonts
 gulp.task('fonts', function() {
-    return gulp.src(['_assets/fontello/fonts/*'])
+  return gulp.src(['node_modules/@mdi/font/fonts/*'])
     .pipe(gulp.dest('_site/fonts/'));
 });
