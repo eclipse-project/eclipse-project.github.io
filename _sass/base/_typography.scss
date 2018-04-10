@@ -19,6 +19,12 @@ h1 {
   @extend %font-condensed;
   font-weight: $weight-light;
   font-size: 5rem;
+  line-height: 5.75rem;
+
+  @include until($desktop) {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
 }
 
 h2 {
