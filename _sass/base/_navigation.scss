@@ -1,20 +1,88 @@
 nav.navbar {
-  background-color: transparent;
+  @extend %font-condensed;
+  background-color: $white;
+  font-size: 1.2rem;
 
   &.is-active {
-    background-color: $darkest-purple;
-    color: $white;
+    height: 100vh;
+
+    > .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   .navbar-menu {
     background-color: transparent;
+    box-shadow: none;
+
+    &.is-active {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
   }
 
-  .navbar-item {
-    color: $white;
+  .navbar-item,
+  .navbar-link {
+    color: $dark-purple;
 
     &:hover {
-      background-color: transparent;
+      color: $dark-purple;
+      background-color: $light-purple;
+    }
+  }
+
+  .navbar-link::after {
+    border-color: $dark-purple;
+  }
+
+  .navbar-dropdown {
+    padding: 0;
+
+    .navbar-item:last-child {
+      border-bottom-left-radius: $radius-large;
+      border-bottom-right-radius: $radius-large;
+    }
+  }
+
+  .language-selector-desktop {
+    @include until($desktop) {
+      display: none;
+    }
+  }
+
+  .language-selector-mobile {
+    display: flex;
+    flex-direction: column;
+
+    @include from($desktop) {
+      display: none;
+    }
+
+    .languages {
+      border: 1px solid $dark-purple;
+      border-radius: $radius-large;
+      cursor: pointer;
+      width: max-content;
+      margin-bottom: 0.375rem;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        color: $dark-blue;
+        background: $white;
+      }
+
+      > a {
+        color: $dark-purple;
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
     }
   }
 }
