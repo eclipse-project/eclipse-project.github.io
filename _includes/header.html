@@ -2,7 +2,8 @@
   <nav class="navbar animated" role="navigation" aria-label="dropdown navigation">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="../">
+        <a class="navbar-item" href="/">
+          <img src="/assets/images/eclipse-logo.jpeg" alt="">
         </a>
         <span class="navbar-burger burger" data-target="navbarMenu">
           <span></span>
@@ -39,7 +40,7 @@
           </div>
         </div>
         <div class="language-selector language-selector-mobile">
-          <div class="navbar-item languages hidden animated fadeOutDown">
+          <div class="navbar-item languages hidden">
             {% for lang in site.languages %}
               <a href="/{% if lang != site.default_language %}{{lang}}{% endif %}">
                 {{ site.language_names[lang] }}

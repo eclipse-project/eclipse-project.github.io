@@ -11,12 +11,14 @@
   <link rel="author" href="humans.txt">
 
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Adamina" rel="stylesheet">
 
   {% if jekyll.environment == "production" %}
   <link rel="stylesheet" href="{{ "/css/main.min.css" | prepend: site.baseurl }}">
   {% else %}
   <link rel="stylesheet" href="{{ "/css/html5-boilerplate.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/materialdesignicons.css" | prepend: site.baseurl }}">
   {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

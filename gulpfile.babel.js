@@ -9,7 +9,8 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 const sassSources = [
   '_sass/vendors/html5-boilerplate.scss',
-  '_sass/main.scss'
+  '_sass/main.scss',
+  'node_modules/@mdi/font/scss/materialdesignicons.scss'
 ];
 
 // =======================
@@ -37,9 +38,9 @@ gulp.task('build:reload', ['build'], () => { reload(); });
 // ======================
 
 // First run htmlmin, then deploy to github
-gulp.task('deploy', ['htmlmin'], () => {
-  // return gulp.src('./_site/**/*').pipe($.ghPages({branch: 'prod'}));
-});
+// gulp.task('deploy', ['htmlmin'], () => {
+//   return gulp.src('./_site/**/*').pipe($.ghPages({branch: 'prod'}));
+// });
 
 // First run build:prod and then minify HTML
 gulp.task('htmlmin', ['build:prod'], () => {
@@ -98,10 +99,11 @@ gulp.task('sass', () => {
       }))
       .pipe($.autoprefixer(['last 15 versions', '> 1%', 'ie 8'], {cascade: true}))
       .pipe($.rename({extname: '.css'}))
-      .pipe(gulp.dest('_site/css/'))
-      .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
-      .pipe($.rename({extname: '.min.css'}))
-      .pipe(gulp.dest('_site/css/'))
+      .pipe(gulp.dest('css'))
+      .pipe(gulp.dest('_site/css'))
+      // .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
+      // .pipe($.rename({extname: '.min.css'}))
+      // .pipe(gulp.dest('css/'))
       .pipe(reload({stream: true}));
   });
 
@@ -122,11 +124,12 @@ gulp.task('js', () => {
       }
     }))
     .pipe($.rename('main.js'))
+    .pipe(gulp.dest('scripts'))
     .pipe(gulp.dest('_site/scripts'))
     .pipe(reload({stream: true}))
     .pipe($.uglify({onError: browserSync.notify}))
     .pipe($.rename({extname: '.min.js'}))
-    .pipe(gulp.dest('_site/scripts'));
+    .pipe(gulp.dest('scripts'));
 });
 
 // Optimise images + copy any other assets
@@ -134,7 +137,7 @@ gulp.task('imagemin', () => {
   let tasks = []
   let assets = gulp.src('_assets/images/*')
     .pipe($.imagemin())
-    .pipe(gulp.dest('_site/assets/images'));
+    .pipe(gulp.dest('assets/images'));
   let media = gulp.src('media/images/*')
     .pipe($.imagemin())
     .pipe(gulp.dest('media/images'));
@@ -145,5 +148,5 @@ gulp.task('imagemin', () => {
 // Fonts
 gulp.task('fonts', function() {
   return gulp.src(['node_modules/@mdi/font/fonts/*'])
-    .pipe(gulp.dest('_site/fonts/'));
+    .pipe(gulp.dest('fonts/'));
 });

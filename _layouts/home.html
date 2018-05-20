@@ -8,35 +8,78 @@
     {% include header.html %}
     <section class="hero">
       <div class="hero-container-wrapper">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-5">
-              <h1>{{ page.headline_title }}</h1>
-              <h2 class="subtitle">{{ page.headline_subtitle }}</h2>
+        <div class="hero-container-inner">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-5">
+                <h1>{{ page.headline_title }}</h1>
+                <p class="subtitle">{{ page.headline_subtitle }}</p>
+              </div>
+              <div class="column is-5 is-offset-2"></div>
             </div>
-            <div class="column is-5 is-offset-2"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="home-page-content container center-aligned">
-      <h3>{{ page.section1.title }}</h3>
-      <div class="columns section-content">
-        <div class="column is-10 is-offset-1">
-          <p>{{ page.section1.content }}</p>
+    <section class="intro-section diagonal-top reveal">
+      <div class="container section-content">
+        <div class="columns is-centered logo-container">
+          <div class="column is-4 is-8-mobile centered-text">
+            <img src="/assets/images/eclipse-logo.jpeg" alt="Eclipse project logo">
+          </div>
         </div>
-      </div>
-      <div class="button-container centered">
-        <a class="button is-large is-rounded primary" href="{{ site.data.routes.what_we_do[page.language] }}">
-          {{- page.section1.button -}}
-        </a>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <p>{{ page.section1.content }}</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="center-aligned blog">
-      <div class="container reveal">
-        <h3>{{ page.section2.title }}</h3>
+    {% for action_section in page.action_sections %}
+      <section class="actions-section reveal">
+        <header class="section-header">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-8 centered-text">
+                <h2 class="with-top-line">{{ action_section.title }}</h2>
+              </div>
+            </div>
+            <div class="columns is-centered">
+              <div class="column centered-text">
+                <p class="title-caption">{{ action_section.subtitle }}</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container section-content">
+          <div class="columns is-centered">
+            <div class="column is-8 text-content">{{ action_section.content }}</div>
+          </div>
+        </div>
+      </section>
+    {% endfor %}
+
+    <!-- <div class="container horizontal-line-container">
+      <div class="columns">
+        <div class="column">
+          <div class="horizontal-line"></div>
+        </div>
+      </div>
+    </div> -->
+
+    <section class="blog-section diagonal-top reveal">
+      <header class="reveal">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column centered-text">
+              <h2>{{ page.section2.title }}</h2>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="section-content container reveal">
         <div class="columns post-list">
           {% assign counter = 1 %}
           {% for post in site.posts %}
@@ -60,7 +103,7 @@
             {% endif %}
           {% endfor %}
         </div>
-        <div class="button-container centered">
+        <div class="button-container columns is-centered">
           <a class="button is-large is-rounded primary" href="{{ site.data.routes.blog[page.language] }}">
             {{- page.section2.button -}}
           </a>
@@ -68,24 +111,37 @@
       </div>
     </section>
 
-    <section class="center-aligned contact">
-      <div class="container reveal">
-        <h3>{{ page.section3.title }}</h3>
+    <section class="contact-section diagonal-top reveal">
+      <header>
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column centered-text">
+              <h2>{{ page.section3.title }}</h2>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="section-content container">
         <div class="columns">
           <div class="column is-one-third">
             <div class="contact-media">
-              <span class="media-icon icon-cube"></span>
+              <a href="https://www.facebook.com/eclipsethessaloniki">
+                <span class="media-icon mdi mdi-facebook"></span>
+                <div class="media-text facebook-group">Eclipse - Support for Lgbti+ and Queer Refugees / الكسوف</div>
+              </a>
             </div>
           </div>
           <div class="column is-one-third">
             <div class="contact-media">
-              <span class="media-icon icon-cube"></span>
-              <div class="media-text">{{ page.section3.email }}</div>
+              <a href="mailto:{{ page.section3.email }}">
+                <span class="media-icon mdi mdi-at"></span>
+              </a>
+              <div class="media-text email-address">{{ page.section3.email }}</div>
             </div>
           </div>
           <div class="column is-one-third">
             <div class="contact-media">
-              <span class="media-icon icon-cube"></span>
+              <span class="media-icon mdi mdi-cellphone-android"></span>
               <div class="media-text">
                 <div class="phone-number">{{ page.section3.phone_arabic }}</div>
                 <div class="languages">English, Arabic (عربي / انكليزي)</div>

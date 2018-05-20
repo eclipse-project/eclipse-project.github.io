@@ -1,54 +1,93 @@
+h2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.with-top-line::before {
+    content: '';
+    width: 10rem;
+    height: 0.3rem;
+    background-color: $black;
+    margin-bottom: 2rem;
+  }
+}
+
+.title-caption {
+  @extend %font-condensed;
+  font-weight: 100;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  color: $light-gray;
+
+  @include from($tablet) {
+    display: inline-flex;
+    align-items: flex-end;
+    white-space: pre;
+  }
+}
+
 .homepage {
   section:not(.hero) {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+}
 
-    h3 {
-      margin-bottom: 3rem;
+section {
+  header {
+    margin-bottom: 5rem;
+
+    @include until($desktop) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .column.centered-text {
+    text-align: center;
+  }
+
+  .section-content {
+    .text-content {
+      @extend %body-typography;
+      @extend %body-large;
     }
   }
 }
 
-.services {
-  margin-top: 2rem;
-}
-
-.service {
-  height: 100%;
+section.intro-section {
+  @extend %body-typography;
+  @extend %body-larger;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  .title {
-    color: $dark-purple;
-    font-weight: 400;
-    font-size: 1.5rem;
+  .logo-container {
+    display: flex;
+    margin-bottom: 3rem;
   }
 }
 
-.center-aligned {
-  padding: 3rem 0;
-  margin-bottom: 0;
+.contact-section {
+  z-index: 10;
 
-  h3 {
-    &::before {
-      content: none;
-    }
-  }
-}
-
-.contact {
   .contact-media {
     transition: transform $transition-duration $transition-effect;
+    text-align: center;
+
+    a {
+      color: inherit;
+    }
 
     &:hover {
-      transform: scale(1.1);
+      .media-icon {
+        transform: scale(1.1);
+      }
     }
   }
 
   .media-icon {
     font-size: 11rem;
+    display: flex;
+    justify-content: center;
+    transition: transform $transition-duration $transition-effect;
   }
 
   .media-text {
@@ -59,14 +98,26 @@
     font-size: 1.5rem;
   }
 
+  .email-address {
+    // font-size: 1.25rem;
+  }
+
   .languages {
     font-size: 0.9rem;
     color: $grey-light;
   }
 }
 
-section.blog {
-  background-color: $petrol;
+.blog-section {
+  background-color: $gray;
+
+  &::before {
+    border-bottom-color: $gray;
+  }
+
+  h2 {
+    color: $light-pink;
+  }
 
   .post-list {
     align-items: stretch;
@@ -93,7 +144,6 @@ section.blog {
     .card-content {
       display: flex;
       flex-direction: column;
-      background-color: $light-purple;
     }
 
     .media-content {
@@ -102,7 +152,6 @@ section.blog {
 
     .title {
       font-size: 1.5rem;
-      color: $dark-purple;
     }
 
     .content {

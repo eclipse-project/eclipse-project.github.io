@@ -13,9 +13,33 @@ nav.navbar {
     }
   }
 
+  > .container {
+    height: 4rem;
+  }
+
+  .navbar-brand {
+    height: 100%;
+
+    .navbar-item {
+      &:hover {
+        background-color: transparent;
+      }
+
+      img {
+        height: 100%;
+        max-height: 3rem;
+      }
+    }
+
+    @include until($desktop) {
+      height: 4rem;
+    }
+  }
+
   .navbar-menu {
     background-color: transparent;
     box-shadow: none;
+    height: 100%;
 
     &.is-active {
       display: flex;
@@ -27,16 +51,20 @@ nav.navbar {
 
   .navbar-item,
   .navbar-link {
-    color: $dark-purple;
+    color: $purple;
 
     &:hover {
-      color: $dark-purple;
-      background-color: $light-purple;
+      color: $purple;
+      background-color: $light-pink;
     }
   }
 
   .navbar-link::after {
-    border-color: $dark-purple;
+    border-color: $purple;
+  }
+
+  .navbar-burger {
+    height: 100%;
   }
 
   .navbar-dropdown {
@@ -63,7 +91,7 @@ nav.navbar {
     }
 
     .languages {
-      border: 1px solid $dark-purple;
+      border: 1px solid $purple;
       border-radius: $radius-large;
       cursor: pointer;
       width: max-content;
@@ -72,12 +100,11 @@ nav.navbar {
       flex-direction: column;
 
       &:hover {
-        color: $dark-blue;
         background: $white;
       }
 
       > a {
-        color: $dark-purple;
+        color: $purple;
 
         &:not(:last-child) {
           margin-bottom: 0.5rem;

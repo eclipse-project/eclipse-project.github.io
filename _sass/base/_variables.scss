@@ -1,21 +1,14 @@
 $transition-duration: 150ms;
 $transition-effect: ease-in-out;
 
-$purple: #d7d1db;
-$dark-purple: #595d70;
-$light-purple: lighten($purple, 10%);
-$darkest-purple: #1d0d12;
-$pastel-purple: #879cd4;
-
-$petrol: #bac1d3;
-$blue: #0f294b;
-$dark-blue: #060b2b;
-
-$black: #060814;
-
-$dark-green: #0c1b1f;
-
-$beige: #87847d;
-$dark-beige: #433930;
+$black: #161516;
+$purple: #461434;
+$gray: #3a3a3a;
+$grey-dark: #3a3a3a;
+$light-gray: lighten($gray, 50%);
+$pink: #ac458c;
+$light-pink: #f7e4f4;
+$white: #fff;
 
 $radius-large: 2px;
+$tablet: 768px;

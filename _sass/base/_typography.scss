@@ -4,18 +4,39 @@
 }
 
 %body-typography {
-  @extend %font-condensed;
+  font-family: 'Adamina', serif;
   font-size: 1.25rem;
+
+  @include until($desktop) {
+    font-size: 1rem;
+  }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: $dark-purple;
+%body-larger {
+  font-size: 1.75rem;
+
+  @include until($desktop) {
+    font-size: 1.5rem;
+  }
+
+  @include until($tablet) {
+    font-size: 1.25rem;
+  }
 }
 
-h1 {
+%body-large {
+  font-size: 1.5rem;
+
+  @include until($desktop) {
+    font-size: 1.25rem;
+  }
+
+  @include until($tablet) {
+    font-size: 1rem;
+  }
+}
+
+%h1 {
   @extend %font-condensed;
   font-weight: $weight-light;
   font-size: 5rem;
@@ -27,39 +48,46 @@ h1 {
   }
 }
 
-h2 {
+%h2 {
   @extend %font-condensed;
+  font-size: 3rem;
+  line-height: 3.75rem;
+
+  @include until($desktop) {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+}
+
+%h3 {
+  @extend %font-condensed;
+  font-size: 2.25rem;
+  line-height: 3rem;
+
+  @include until($desktop) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+h1,
+h2 {
+  color: $black;
+}
+
+h1 {
+  @extend %h1;
+}
+
+h2 {
+  @extend %h2;
 }
 
 h3 {
-  @extend %font-condensed;
-  font-size: 3rem;
-  font-weight: 900;
-  display: inline-flex;
-  flex-direction: column;
-  color: $dark-purple;
-
-  &::before {
-    content: '';
-    width: 100%;
-    height: 0.3rem;
-    background-color: $dark-purple;
-  }
+  @extend %h3;
 }
-
-h4 {
-  @extend %font-condensed;
-  font-size: 2rem;
-  font-weight: bold;
-
-  @include from($tablet) {
-    display: inline-flex;
-    align-items: flex-end;
-    white-space: pre;
-  }
-}
-
-p {
-  @extend %body-typography;
-  font-weight: 300;
-}
+//
+// p {
+//   @extend %body-typography;
+//   font-weight: 300;
+// }

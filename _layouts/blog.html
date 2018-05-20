@@ -1,26 +1,21 @@
 ---
 layout: default
 ---
-<div class="columns">
-  <div class="column">
+<div class="columns is-centered">
+  <div class="column is-8">
     {% for post in site.posts %}
       {% if post.language == page.language %}
-        <div class="card article">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content has-text-centered">
-                <a href="{{ post.url }}" class="title article-title">{{ post.title }}</a>
-                <p class="is-6 article-subtitle">{{ post.date | date_to_long_string }}</p>
-              </div>
-            </div>
-
-            <div class="content columns is-centered">
-              <div class="column is-9-desktop">
-                {{ post.excerpt }}
-              </div>
-            </div>
+        <article>
+          <header>
+            <a href="{{ post.url }}">
+              <h2>{{ post.title }}</h2>
+              <time datetime="{{ post.date }}">{{ post.date | date_to_long_string }}</time>
+            </a>
+          </header>
+          <div class="article-content article">
+            {{ post.content }}
           </div>
-        </div>
+        </article>
       {% endif %}
     {% endfor %}
   </div>

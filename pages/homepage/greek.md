@@ -10,9 +10,7 @@ headline_title: |
 headline_subtitle: |
   Κενό περιεχόμενο
 section1:
-  title: Κενό περιεχόμενο
   content: Κενό περιεχόμενο
-  button: Περισσότερα
 section2:
   title: Τα τελευταία νέα μας
   button: Όλα τα άρθρα

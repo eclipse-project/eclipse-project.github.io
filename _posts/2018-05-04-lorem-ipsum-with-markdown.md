@@ -1,9 +1,11 @@
 ---
 layout: post
 language: en
-title: Lorem ipsum
-teaser_text: test
-date: '2018-03-13T21:03:33+01:00'
+title: Lorem ipsum with Markdown
+teaser_text: >-
+  This is our freshly baked website! Enjoy! Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit, sed do eiusmod temporincididunt.
+date: '2018-05-04 16:16:01 -0600'
 ---
 
 Lorem ipsum dolor sit amet, suscipit urbanitas definiebas eu vim, ut assum tritani eos, ad dignissim reprehendunt vis. Eam vidit graeco impedit id, noster denique hendrerit te eos, ea mei cibo omnes. Pro quodsi option eu. Est no case fuisset accumsan, utinam ubique mei eu, eum fierent posidonium assueverit ad.

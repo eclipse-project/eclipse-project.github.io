@@ -9,11 +9,15 @@
 }
 
 .primary {
-  @extend %body-typography;
-  background-color: $pastel-purple;
+  @extend %font-condensed;
+  background-color: $pink;
   color: $white;
 
   &:hover {
     color: $white;
   }
+}
+
+.button-container {
+  text-align: center;
 }
