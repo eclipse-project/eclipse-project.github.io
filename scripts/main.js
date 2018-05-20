@@ -73,21 +73,18 @@
 	      (0, _jquery2.default)(element).addClass('revealed');
 	    }
 	  });
-	  sr.reveal('.reveal', { duration: 1000, easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)' });
-	  sr.reveal('.diagonal-top.reveal', { distance: '50vh' });
-	  sr.reveal('.left-aligned .reveal', { origin: 'left' });
-	  sr.reveal('.right-aligned .reveal', { origin: 'right' });
-	  sr.reveal('.center-aligned .reveal', { origin: 'bottom' });
+	  if ((0, _jquery2.default)('.reveal').length) {
+	    sr.reveal('.reveal', { duration: 1000, easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)' });
+	  }
+	  if ((0, _jquery2.default)('.diagonal-top.reveal').length) {
+	    sr.reveal('.diagonal-top.reveal', { distance: '50vh' });
+	  }
 
 	  renderYoutubeVideos();
 
 	  (0, _jquery2.default)('.has-dropdown').on('click', function () {
 	    (0, _jquery2.default)(this).toggleClass('is-active');
 	  });
-
-	  // $('.language-selector .navbar-item').on('click', function() {
-	  //   $(this).find('.mdi').toggleClass('mdi-flip-v');
-	  // });
 
 	  (0, _jquery2.default)('.language-selector-mobile-trigger').on('click', function () {
 	    (0, _jquery2.default)(this).parent().find('.languages').toggleClass('hidden');

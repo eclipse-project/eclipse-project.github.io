@@ -22,7 +22,6 @@ keep_files:
   - css/main.min.css
   - css/html5-boilerplate.css
   - css/html5-boilerplate.min.css
-  - css/fontello.min.css
   - scripts/main.js
   - scripts/main.min.js
   - fonts
