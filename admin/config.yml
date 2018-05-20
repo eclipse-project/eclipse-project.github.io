@@ -36,23 +36,16 @@ collections:
         name: "section1"
         widget: "object"
         fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Content", name: "content", widget: "markdown"}
-        - {label: "Button Text", name: "button", widget: "string"}
-      - label: "Section 2"
-        name: "section2"
-        widget: "object"
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - {label: "Button Text", name: "button", widget: "string"}
+      - label: "Action sections"
+        name: "action_sections"
+        widget: "list"
         fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Button Text", name: "button", widget: "string"}
-      - label: "Section 3"
-        name: "section3"
-        widget: "object"
-        fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Email", name: "email", widget: "string"}
-        - {label: "Arabic Phone", name: "phone_arabic", widget: "string"}
-        - {label: "Farsi Phone", name: "phone_farsi", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
   - name: "blog"
     label: "Blog page"
     folder: "pages/blog"
