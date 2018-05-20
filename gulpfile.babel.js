@@ -101,9 +101,9 @@ gulp.task('sass', () => {
       .pipe($.rename({extname: '.css'}))
       .pipe(gulp.dest('css'))
       .pipe(gulp.dest('_site/css'))
-      // .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
-      // .pipe($.rename({extname: '.min.css'}))
-      // .pipe(gulp.dest('css/'))
+      .pipe($.cleanCss({keepBreaks: false, keepSpecialComments:true}))
+      .pipe($.rename({extname: '.min.css'}))
+      .pipe(gulp.dest('css/'))
       .pipe(reload({stream: true}));
   });
 
