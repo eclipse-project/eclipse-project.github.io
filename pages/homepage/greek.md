@@ -14,6 +14,10 @@ section1:
 section2:
   title: Τα τελευταία νέα μας
   button: Όλα τα άρθρα
+donateSection:
+  title: Donate
+  content: Help us continue our work with your valuable contribution
+  button: Donate now
 section3:
   title: Επικοινωνήστε
   email: eclipse_alkusuf@riseup.net

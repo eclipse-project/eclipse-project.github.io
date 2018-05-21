@@ -121,7 +121,6 @@ section.intro-section {
 
   .post-list {
     align-items: stretch;
-    margin-bottom: 3rem;
   }
 
   .post {
@@ -172,4 +171,8 @@ section.intro-section {
   figure > img {
     object-fit: cover;
   }
+}
+
+.button-container {
+  margin-top: 3rem;
 }

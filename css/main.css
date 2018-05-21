@@ -17282,8 +17282,7 @@ section.intro-section {
   .blog-section .post-list {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch;
-    margin-bottom: 3rem; }
+            align-items: stretch; }
   .blog-section .post {
     text-align: left; }
     .blog-section .post .card,
@@ -17323,3 +17322,6 @@ section.intro-section {
   .blog-section figure > img {
     -o-object-fit: cover;
        object-fit: cover; }
+
+.button-container {
+  margin-top: 3rem; }

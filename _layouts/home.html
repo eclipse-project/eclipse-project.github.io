@@ -118,6 +118,30 @@
       </div>
     </section>
 
+    <section class="donate diagonal-top reveal">
+      <header class="reveal">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column centered-text">
+              <h2>{{ page.donateSection.title }}</h2>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="section-content container reveal">
+        <div class="columns is-8 centered has-text-centered	text-content">
+          <div class="column">
+            {{page.donateSection.content}}
+          </div>
+        </div>
+        <div class="button-container columns is-centered">
+          <a class="button is-large is-rounded primary" href="{{ site.data.routes.donate[page.language] }}">
+            {{- page.donateSection.button -}}
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="contact-section diagonal-top reveal">
       <header>
         <div class="container">

@@ -66,6 +66,10 @@ action_sections:
 section2:
   title: Latest from our blog
   button: See all posts
+donateSection:
+  title: Donate
+  content: Help us continue our work with your valuable contribution
+  button: Donate now
 section3:
   title: Get in touch
   email: eclipse_alkusuf@riseup.net
