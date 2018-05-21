@@ -1,10 +1,11 @@
 ---
 layout: home
-is_in_menu: true
-position_in_menu: 1
 language: en
 permalink: index.html
+is_in_menu: true
+position_in_menu: 1
 title: Home
+
 headline_title: Eclipse
 headline_subtitle: >
   Eclipse is a support group for LGBTI+ and Queer refugees in Thessaloniki. We
@@ -62,4 +63,16 @@ action_sections:
       co-conducted by the group members themselves.
     subtitle: lorem ipsum
     title: network with other LGBTI+ support groups in Europe
+blogSection:
+  title: Latest from our blog
+  button: See all posts
+donateSection:
+  title: Donate
+  content: Help us continue our work with your valuable contribution
+  button: Donate now
+section3:
+  title: Get in touch
+  email: eclipse_alkusuf@riseup.net
+  phone_arabic: +30 697 708 1273
+  phone_farsi: +30 697 708 3801
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: subpage
 language: gr
 permalink: /gr/donate/
 is_in_menu: true

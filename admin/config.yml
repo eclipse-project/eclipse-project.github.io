@@ -46,6 +46,26 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Content", name: "content", widget: "markdown"}
+      - label: "Blog section"
+        name: "blogSection"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Button Text", name: "button", widget: "string"}
+      - label: "Donation section"
+        name: "donationSection"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - {label: "Button Text", name: "button", widget: "string"}
+      - label: "Get in contect section"
+        name: "section3"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - {label: "Button Text", name: "button", widget: "string"}
   - name: "blog"
     label: "Blog page"
     folder: "pages/blog"
