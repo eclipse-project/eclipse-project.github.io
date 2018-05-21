@@ -8,10 +8,12 @@ subtitle: Help us support LGBTQ refugees
 ---
 If you want to support our work, you can donate here:
 
-# test
+IBAN: CH8000774010355577300
 
-## test
+Account: 10 355.577.300
 
-> test
+SWIFT/BIC: GRKBCH2270A
 
-`test`
+BC-Nr.: 774
+
+Account name: Eclipse
