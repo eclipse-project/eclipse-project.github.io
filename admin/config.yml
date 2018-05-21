@@ -39,7 +39,7 @@ collections:
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Content", name: "content", widget: "markdown"}
+          - {label: "Content", name: "content", widget: "text"}
           - {label: "Button Text", name: "button", widget: "string"}
       - label: "Action sections"
         name: "action_sections"
@@ -47,7 +47,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Content", name: "content", widget: "markdown"}
+          - {label: "Content", name: "content", widget: "text"}
       - label: "Blog section"
         name: "blogSection"
         widget: "object"
@@ -59,7 +59,7 @@ collections:
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Content", name: "content", widget: "markdown"}
+          - {label: "Content", name: "content", widget: "text"}
           - {label: "Button Text", name: "button", widget: "string"}
       - label: "Get in contect section"
         name: "section3"
