@@ -87,13 +87,20 @@
               {% assign counter = counter | plus: 1 %}
               <div class="column is-one-third post">
                 <a class="card" href="{{ post.url }}">
+                  {% if post.thumbnail %}
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="{{ post.thumbnail }}" alt="Placeholder image">
+                      </figure>
+                    </div>
+                  {% endif %}
                   <div class="card-content">
                     <div class="media">
                       <div class="media-content">
                         <p class="title">{{ post.title }}</p>
                       </div>
                     </div>
-                    <div class="content">{{ post.excerpt }}</div>
+                    <div class="content">{{ post.teaser_text }}</div>
                     <footer class="card-footer">
                       <time datetime="2016-1-1">{{ post.date | date_to_long_string }}</time>
                     </footer>
