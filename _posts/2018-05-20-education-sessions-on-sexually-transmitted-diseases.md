@@ -5,6 +5,7 @@ title: Education sessions on Sexually Transmitted Diseases
 teaser_text: >-
   This week we expanded on other STDs like Syphilis, HPV and others. We talked
   about their symptoms, how they can be treated and how to best prevent them.
+thumbnail: /media/images/32294569_862163893967712_4269060968098562048_o.jpg
 date: '2018-05-15T12:53:08+02:00'
 ---
 Last week we continued the education sessions on Sexually Transmitted Diseases (STDs). We started a few months ago with a workshop that focused mainly on HIV and different types of Hepatitis. This week we expanded on other STDs like Syphilis, HPV and others. We talked about their symptoms, how they can be treated and how to best prevent them. 
