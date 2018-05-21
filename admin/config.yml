@@ -22,6 +22,8 @@ collections:
     folder: "pages/homepage"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Language", name: "language", widget: "hidden"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Add to menu", name: "is_in_menu", widget: "boolean"}
       - label: "Position in menu"
         name: "position_in_menu"
@@ -73,6 +75,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden"}
       - {label: "Language", name: "language", widget: "hidden"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Add to menu", name: "is_in_menu", widget: "boolean"}
       - label: "Position in menu"
         name: "position_in_menu"
@@ -88,6 +91,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden"}
       - {label: "Language", name: "language", widget: "hidden"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Add to menu", name: "is_in_menu", widget: "boolean"}
       - label: "Position in menu"
         name: "position_in_menu"
