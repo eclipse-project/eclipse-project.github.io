@@ -5,7 +5,7 @@ position_in_menu: 1
 language: en
 permalink: index.html
 title: Home
-headline_title: Test
+headline_title: Eclipse
 headline_subtitle: >
   Eclipse is a support group for LGBTI+ and Queer refugees in Thessaloniki. We
   want to create a safe space, where refugees can connect within themselves and
