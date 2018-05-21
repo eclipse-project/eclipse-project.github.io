@@ -63,4 +63,3 @@ action_sections:
     subtitle: lorem ipsum
     title: network with other LGBTI+ support groups in Europe
 ---
-

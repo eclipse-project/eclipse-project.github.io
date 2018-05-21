@@ -1,10 +1,10 @@
 # Site settings
-title: Reticulating Splines
+title: Eclipse Project Thessaloniki
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-twitter_username: vannio
-github_username: vannio
-linkedin_username: vannio
+# twitter_username: vannio
+# github_username: vannio
+# linkedin_username: vannio
 
 # Build settings
 markdown: kramdown

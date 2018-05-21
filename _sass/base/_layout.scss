@@ -149,3 +149,9 @@ section.center-aligned {
     border: 1px solid $light-gray;
   }
 }
+
+.subpage {
+  .content {
+    @extend %body-typography;
+  }
+}
