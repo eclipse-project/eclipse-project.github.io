@@ -53,7 +53,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Button Text", name: "button", widget: "string"}
       - label: "Donation section"
-        name: "donationSection"
+        name: "donateSection"
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
@@ -64,8 +64,9 @@ collections:
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Content", name: "content", widget: "markdown"}
-          - {label: "Button Text", name: "button", widget: "string"}
+          - {label: "E-mail", name: "email", widget: "string"}
+          - {label: "Phone Arabic", name: "phone_arabic", widget: "string"}
+          - {label: "Phone Farsi", name: "phone_farsi", widget: "string"}
   - name: "blog"
     label: "Blog page"
     folder: "pages/blog"
