@@ -101,4 +101,4 @@ collections:
         max: 100
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Content", name: "body_content", widget: "markdown"}
