@@ -61,3 +61,19 @@ collections:
         max: 100
       - {label: "Title", name: "title", widget: "string"}
       - {label: "subtitle", name: "subtitle", widget: "text"}
+  - name: "donate"
+    label: "Donate page"
+    folder: "pages/donate"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Language", name: "language", widget: "hidden"}
+      - {label: "Add to menu", name: "is_in_menu", widget: "boolean"}
+      - label: "Position in menu"
+        name: "position_in_menu"
+        widget: "number"
+        valueType: "int"
+        min: 1
+        max: 100
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "subtitle", name: "subtitle", widget: "text"}
+      - {label: "body", name: "body", widget: "markdown"}
