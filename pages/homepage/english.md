@@ -4,7 +4,7 @@ language: en
 permalink: index.html
 is_in_menu: true
 position_in_menu: 1
-title: Home test
+title: Home
 headline_title: Eclipse
 headline_subtitle: >
   Eclipse is a support group for LGBTI+ and Queer refugees in Thessaloniki. We
@@ -67,16 +67,7 @@ blogSection:
   title: Latest from our blog
 donateSection:
   button: Donate now
-  content: |-
-    Help us continue our work with your **valuable** contribution
-
-    1. srg
-    2. dfg
-    3. dfg
-
-    # sfgdfg
-
-    ## dfgdfg
+  content: Help us continue our work with your valuable contribution
   title: Donate
 section3:
   email: eclipse_alkusuf@riseup.net
