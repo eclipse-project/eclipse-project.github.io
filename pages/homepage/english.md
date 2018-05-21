@@ -2,6 +2,8 @@
 layout: home
 is_in_menu: true
 position_in_menu: 1
+language: en
+permalink: index.html
 title: Home
 headline_title: Test
 headline_subtitle: >
