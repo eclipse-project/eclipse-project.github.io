@@ -26,8 +26,9 @@ keep_files:
   - scripts/main.min.js
   - fonts
 
-languages: ["en", "gr"]
+languages: ["en", "gr", "ar"]
 default_language: en
 language_names:
   en: English
   gr: Ελληνικά
+  ar: "عربى"
