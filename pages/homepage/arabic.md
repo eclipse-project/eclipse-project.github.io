@@ -5,7 +5,7 @@ permalink: /ar/index.html
 is_in_menu: true
 position_in_menu: 1
 title: Home (ar)
-headline_title: Eclipse test
+headline_title: Eclipse
 headline_subtitle: >
   Eclipse is a support group for LGBTI+ and Queer refugees in Thessaloniki. We
   want to create a safe space, where refugees can connect within themselves and
@@ -75,3 +75,4 @@ section3:
   phone_farsi: +30 697 708 3801
   title: Get in touch
 ---
+
