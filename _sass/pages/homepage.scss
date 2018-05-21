@@ -168,4 +168,8 @@ section.intro-section {
       font-weight: 300;
     }
   }
+
+  figure > img {
+    object-fit: cover;
+  }
 }
