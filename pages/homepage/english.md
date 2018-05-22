@@ -70,8 +70,8 @@ donateSection:
   title: Donate
 section3:
   email: eclipse_alkusuf@riseup.net
-  phone_arabic: +30 697 708 1273
-  phone_farsi: +30 697 708 3801
+  phone_arabic: tba
+  phone_farsi: tba
   title: Get in touch
 ---
 
