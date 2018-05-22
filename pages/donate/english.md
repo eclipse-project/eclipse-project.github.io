@@ -9,7 +9,6 @@ subtitle: Help us support LGBTQ refugees
 body_content: |-
   If you want to support our work, you can donate here:
 
-
   IBAN: CH8000774010355577300
 
   Account: 10 355.577.300
@@ -19,5 +18,9 @@ body_content: |-
   BC-Nr.: 774
 
   Account name: Eclipse
+
+  Or via PayPal:
+
+  <https://www.paypal.me/EclipseAlKusuf>
 ---
 
