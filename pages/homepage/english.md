@@ -35,20 +35,20 @@ action_sections:
       joining these groups and are therefore left without any education. This is
       why we decided to offer language classes in small groups, in order to meet
       their needs as good as possible.
-    subtitle: lorem ipsum
+    subtitle: without discrimination
     title: learn a language
   - content: >-
       Once a week one of the group members is conducting an aerobic or dance
       class, which enables people to get some physical activity and is a good
       way to reduce stress. Apart from this we organise other activities like
       beach trips, birthday parties or other excursions.
-    subtitle: lorem ipsum
+    subtitle: creating a community
     title: exercise and socialise
-  - content: >-
-      We connect the members of our group to other organisations, which can
-      support them in other needs. Through our network we can refer them to the
-      following services
-    subtitle: lorem ipsum
+  - content: >
+      We connect the members of our group to other organizations, which can
+      cover a variety of needs. Through our network we can refer them to
+      services such as legal, medical and psychological support to housing.
+    subtitle: working with a wide range of organizations
     title: connect with organisations and services
   - content: >-
       In order for the members of our group to not lose their support, when they
@@ -59,7 +59,7 @@ action_sections:
       We have been working with LGBTI+ refugees in Thessaloniki for more than a
       year and in that time have created a group that sustains itself and is
       co-conducted by the group members themselves.
-    subtitle: lorem ipsum
+    subtitle: solidarity doesn't know borders
     title: network with other LGBTI+ support groups in Europe
 blogSection:
   button: See all posts
