@@ -11,8 +11,9 @@ headline_subtitle: >
   want to create a safe space, where refugees can connect within themselves and
   to the local LGBTI+ community.
 section1:
-  content: |
+  content: >
     Welcome to our new website. Stay tuned as we're currently adding content.
+    Other languages will follow soon.
 action_sections:
   - content: >-
       At the core of our work is a weekly meeting, to create a safe space for
