@@ -51,6 +51,10 @@ section {
       @extend %body-typography;
       @extend %body-large;
     }
+
+    a:not(.button):not(.card):not(.contact-media-link) {
+      @extend %a;
+    }
   }
 }
 

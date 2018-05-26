@@ -1,0 +1,53 @@
+%a {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  vertical-align: bottom;
+  color: transparent;
+  text-shadow: 0 0 $purple, 0.08em 0 0 #fff, 0 0, -0.08em 0 0 #fff;
+
+  &::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(#fff, 0),
+      rgba(#fff, 0)
+    ) center 1.08em / 100% 1px no-repeat;
+
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -3px;
+    width: 400%;
+    will-change: transform;
+    z-index: -1;
+    opacity: 0.4;
+    transition: background 0.25s;
+  }
+
+  &:hover::after {
+    animation: underline-gradient 3s linear infinite;
+    opacity: 1;
+    background-image: linear-gradient(
+      90deg,
+      rgba($flag-red, 1) calc(100% / 8 * 1),
+      rgba($flag-orange, 1) calc(100% / 8 * 2),
+      rgba($flag-yellow, 1) calc(100% / 8 * 3),
+      rgba($flag-green, 1) calc(100% / 8 * 4),
+      rgba($flag-blue, 1) calc(100% / 8 * 5),
+      rgba($flag-purple, 1) calc(100% / 8 * 6),
+      rgba($flag-red, 1) calc(100% / 8 * 7)
+    );
+  }
+}
+
+@keyframes underline-gradient {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+
+  100% {
+    transform: translate3d(-75%, 0%, 0);
+  }
+}

@@ -20,11 +20,10 @@ nav.navbar {
   }
 
   @include until($desktop) {
-    display: flex;
-    justify-content: space-between;
-
     .submenu {
       display: none;
+      border-top: 1px solid $light-pink;
+      padding-top: 1rem;
     }
 
     &.is-active {
@@ -57,6 +56,8 @@ nav.navbar {
     background-color: transparent;
     box-shadow: none;
     height: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 
     &.is-active {
       display: flex;
