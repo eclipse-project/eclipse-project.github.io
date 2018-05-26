@@ -135,13 +135,14 @@ nav.navbar {
 .submenu {
   @extend %font-condensed;
   @extend %body-smaller;
+  margin-bottom: 0.5rem;
 
   > ul {
     display: flex;
   }
 
   li {
-    padding: 0.3rem 0.5rem;
+    padding: 0 0.5rem;
     color: $gray;
 
     span {
@@ -165,5 +166,14 @@ nav.navbar {
     li {
       padding: 0.5rem 1rem;
     }
+  }
+}
+
+.shadow {
+  box-shadow: inset 0 7px 0.5rem -7px rgba(0, 0, 0, 0.4);
+  height: 0.5rem;
+
+  @include until($desktop) {
+    display: none;
   }
 }

@@ -153,5 +153,9 @@ section.center-aligned {
 .subpage {
   article.content {
     @extend %body-typography;
+
+    a {
+      @extend %a;
+    }
   }
 }
