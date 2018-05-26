@@ -23,36 +23,25 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-          <div class="navbar-item has-dropdown language-selector language-selector-desktop">
-            <a class="navbar-item">
-              <span>Language</span>
-              <i class="mdi mdi-chevron-down"></i>
-            </a>
-            <div class="navbar-dropdown">
-              {% for lang in site.languages %}
-                {% if lang != page.language %}
-                  <a class="navbar-item" href="/{% if lang != site.default_language %}{{lang}}{% endif %}">
-                    {{ site.language_names[lang] }}
-                  </a>
-                {% endif %}
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-        <div class="language-selector language-selector-mobile">
-          <div class="navbar-item languages hidden">
-            {% for lang in site.languages %}
-              <a href="/{% if lang != site.default_language %}{{lang}}{% endif %}">
-                {{ site.language_names[lang] }}
-              </a>
-            {% endfor %}
-          </div>
-          <div class="navbar-item language-selector-mobile-trigger">
-            <span>Language</span>
-            <i class="mdi mdi-chevron-down mdi-flip-v"></i>
-          </div>
         </div>
       </div>
+    </div>
+    <div class="container submenu">
+      <ul>
+        {% for lang in site.languages %}
+        <li>
+          {% if lang != page.language %}
+          <a class="navbar-subitem" href="/{% if lang != site.default_language %}{{lang}}{% endif %}">
+            {{ site.language_names[lang] }}
+          </a>
+          {% else %}
+          <span class="navbar-subitem">
+            {{ site.language_names[lang] }}
+          </span>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </nav>
 </header>

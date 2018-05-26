@@ -12,15 +12,19 @@
   }
 }
 
-%body-larger {
-  font-size: 1.75rem;
+%body-small {
+  font-size: 1rem;
 
   @include until($desktop) {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
   }
+}
 
-  @include until($tablet) {
-    font-size: 1.25rem;
+%body-smaller {
+  font-size: 0.875rem;
+
+  @include until($desktop) {
+    font-size: 0.75rem;
   }
 }
 
@@ -33,6 +37,18 @@
 
   @include until($tablet) {
     font-size: 1rem;
+  }
+}
+
+%body-larger {
+  font-size: 1.75rem;
+
+  @include until($desktop) {
+    font-size: 1.5rem;
+  }
+
+  @include until($tablet) {
+    font-size: 1.25rem;
   }
 }
 
@@ -86,13 +102,8 @@ h2 {
 h3 {
   @extend %h3;
 }
-//
-// p {
-//   @extend %body-typography;
-//   font-weight: 300;
-// }
+
 %a {
-  // color: transparent;
   display: inline-block;
   overflow: hidden;
   position: relative;

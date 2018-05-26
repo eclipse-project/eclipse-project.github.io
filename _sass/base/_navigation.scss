@@ -2,19 +2,36 @@ nav.navbar {
   @extend %font-condensed;
   background-color: $white;
   font-size: 1.2rem;
+  flex-direction: column;
 
   &.is-active {
     height: 100vh;
+  }
 
+  @include from($desktop) {
     > .container {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       height: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: unset;
     }
   }
 
-  > .container {
-    height: 4rem;
+  @include until($desktop) {
+    display: flex;
+    justify-content: space-between;
+
+    .submenu {
+      display: none;
+    }
+
+    &.is-active {
+      .submenu {
+        display: block;
+      }
+    }
   }
 
   .navbar-brand {
@@ -54,8 +71,8 @@ nav.navbar {
     color: $purple;
 
     &:hover {
-      color: $purple;
-      background-color: $light-pink;
+      color: $pink;
+      background-color: transparent;
     }
   }
 
@@ -110,6 +127,42 @@ nav.navbar {
           margin-bottom: 0.5rem;
         }
       }
+    }
+  }
+}
+
+.submenu {
+  @extend %font-condensed;
+  @extend %body-smaller;
+
+  > ul {
+    display: flex;
+  }
+
+  li {
+    padding: 0.3rem 0.5rem;
+    color: $gray;
+
+    span {
+      color: $light-gray;
+    }
+
+    a:not(:hover) {
+      color: $gray;
+    }
+
+    a:hover {
+      color: $pink;
+    }
+  }
+
+  @include until($desktop) {
+    ul {
+      flex-direction: column;
+    }
+
+    li {
+      padding: 0.5rem 1rem;
     }
   }
 }
