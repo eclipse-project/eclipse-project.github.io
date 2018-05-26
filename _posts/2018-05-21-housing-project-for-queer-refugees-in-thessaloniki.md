@@ -5,6 +5,7 @@ title: Housing project for Queer Refugees in Thessaloniki
 teaser_text: >-
   Our sofas are not enough – Let’s get houses for Queer Refugees in
   Thessaloniki! Support our Crowdfunding campaign!
+thumbnail: /media/images/sddefault.webp
 date: '2018-05-21T16:47:43+03:00'
 ---
 https://www.youcaring.com/eclipse
