@@ -135,9 +135,18 @@ section.intro-section {
       display: flex;
       flex-direction: column;
       transition: transform $transition-duration $transition-effect;
+      box-shadow: 0 55px 80px -40px rgba(0, 0, 0, 0.45);
+      border-radius: $radius;
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
+      }
+    }
+
+    .card-image {
+      img {
+        border-top-left-radius: $radius;
+        border-top-right-radius: $radius;
       }
     }
 
